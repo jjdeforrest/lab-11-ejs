@@ -4,17 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
 
-  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+  
+
 </head>
 <body>
   <ul>
-    <li>placeholder book (DUNE)</li>
-    <% books.forEach(book => { %>
-      <li><%= book.title%></li>
-      <li><%= book.author%></li>
-      <li><%=  %></li>
+  
+    <% objectArray.forEach(objectArray => { %>
+        <h3>Book Title: <%= objectArray.title%></h3>
+        <p><%=  %></p>
+        <h3>Author: <%= objectArray.author%></h3>
+       
+        <ul><%=  %></ul>
+        <p><%=  %></p>
+        <p><%=  %></p>
     <%}) %>
   </ul>
 </body>
